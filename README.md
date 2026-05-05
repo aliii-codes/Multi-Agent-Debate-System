@@ -1,67 +1,100 @@
-# Multi-Agent Debate System
+# Multi-Agent Debate System 🗣️
 
-## Project Title & Description
-A multi-agent system that simulates structured debates between AI agents on user-defined topics. It generates persuasive arguments, rebuttals, and a judged verdict, providing insights into different perspectives.
+**Simulate structured debates between AI agents on any topic, generating persuasive arguments, rebuttals, and judged verdicts.**
 
-## Features
-- **Structured Debates**: 3-round debates with opening arguments, rebuttals, and closings
-- **Multi-Perspective**: Supports pro/con, AI vs human, and other debate formats
-- **Judging System**: Impartial AI judge evaluates arguments and declares a winner
-- **Terminal UI**: Rich, interactive debate interface (optional)
-- **Customizable**: Easily modify agent roles, debate structure, and LLM parameters
+[![GitHub stars](https://img.shields.io/github/stars/aliii-codes/Multi-Agent-Debate-System?style=for-the-badge)](https://github.com/aliii-codes/Multi-Agent-Debate-System/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/aliii-codes/Multi-Agent-Debate-System?style=for-the-badge)](https://github.com/aliii-codes/Multi-Agent-Debate-System/network)
+[![GitHub issues](https://img.shields.io/github/issues/aliii-codes/Multi-Agent-Debate-System?style=for-the-badge)](https://github.com/aliii-codes/Multi-Agent-Debate-System/issues)
+[![License](https://img.shields.io/github/license/aliii-codes/Multi-Agent-Debate-System?style=for-the-badge)](LICENSE)
 
-## Tech Stack
-- **Python**
-- **CrewAI**: Agent and task management framework
-- **Groq**: LLM provider (Llama 3 models)
-- **Rich** (optional): Terminal UI library
-- **dotenv**: Environment variable management
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![CrewAI](https://img.shields.io/badge/CrewAI-latest-orange?style=for-the-badge&logo=github)](https://github.com/joaomdmoura/crewAI)
+[![Groq](https://img.shields.io/badge/Groq-Llama%203-brightgreen?style=for-the-badge&logo=groq)](https://groq.com/)
+[![Rich](https://img.shields.io/badge/Rich-terminal%20UI-purple?style=for-the-badge&logo=terminal)](https://rich.readthedocs.io/)
 
-## Installation
-1. Clone the repository:
+---
+
+🚀 **New in v1.1:**
+- **Enhanced Terminal UI** 🎨: Richer debate visualization with live updates
+- **Improved Argument Structure** 💬: Sharper rebuttals and closing arguments
+- **Faster Response Times** ⚡: Optimized LLM parameters for quicker debates
+
+---
+
+| Feature | Description |
+|---------|-------------|
+| **Structured Debates** 🏛️ | 3-round debates with opening, rebuttals, and closing arguments |
+| **Multi-Perspective** 🌐 | Supports pro/con, AI vs human, and custom debate formats |
+| **AI Judging** ⚖️ | Impartial evaluation with logic/evidence/attack scoring |
+| **Terminal UI** 🎮 | Interactive debate visualization (optional) |
+| **Customizable** 🛠️ | Easily modify agents, structure, and LLM parameters |
+
+---
+
+| Category | Technologies |
+|----------|----------------|
+| **Core Framework** | Python, CrewAI |
+| **LLM Provider** | Groq (Llama 3 models) |
+| **UI (optional)** | Rich |
+| **Environment** | dotenv |
+
+---
+
+**Get started in 3 steps:**
+
+1. **Clone & Install**
    ```bash
    git clone https://github.com/aliii-codes/Multi-Agent-Debate-System.git
    cd Multi-Agent-Debate-System
-   ```
-2. Install dependencies:
-   ```bash
    pip install -r requirements.txt
    ```
-3. Obtain a Groq API key and create a `.env` file:
-   ```
-   GROQ_API_KEY=your_api_key_here
-   ```
 
-## Usage
-1. Run a basic debate:
-   ```bash
-   python full_debate.py
+2. **Set Environment Variables**
+   Create a `.env` file:
    ```
-2. For a terminal UI experience:
+   GROQ_API_KEY=your_groq_api_key
+   ```
+   [Sign up for Groq](https://groq.com/) to obtain an API key.
+
+3. **Run a Debate**
    ```bash
+   # Basic CLI version
+   python full_debate.py
+
+   # Terminal UI version
    python terminal_ui_by_claude.py
    ```
-3. Enter your debate topic when prompted.
 
-Example output:
+---
+
+**Project Structure**
 ```
-DEBATE STARTING...
-
-ROUND 1 - Pro: [arguments]
-ROUND 1 - Anti: [arguments]
-...
-FINAL VERDICT:
-[judge's decision and scores]
+├── basic_architecture.py  # Core debate logic
+├── full_debate.py         # Complete debate implementation
+└── terminal_ui_by_claude.py # Terminal UI version
 ```
 
-## Project Structure
-```
-Multi-Agent-Debate-System/
-├── basic_architecture.py      # Core debate logic
-├── full_debate.py             # Complete debate implementation
-├── terminal_ui_by_claude.py   # Terminal UI version
-├── LICENSE
-```
+---
 
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+**Contributing** 🤝
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Commit changes: `git commit -m "Add new feature"`
+4. Push to branch: `git push origin feature/new-feature`
+5. Open a pull request
+
+**Report Issues** 🐛
+[Open an issue](https://github.com/aliii-codes/Multi-Agent-Debate-System/issues/new) with:
+- Error description
+- Steps to reproduce
+- Expected behavior
+
+---
+
+**License**
+This project is licensed under the [MIT License](LICENSE).
+
+**Acknowledgements**
+- [CrewAI](https://github.com/joaomdmoura/crewAI) for agent management
+- [Groq](https://groq.com/) for LLM inference
+- [Rich](https://rich.readthedocs.io/) for terminal UI components
